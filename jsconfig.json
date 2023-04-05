@@ -1,19 +1,14 @@
+//webpack的配置文件
 {
+  //编译配置
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]//设置路径简写：`@`->`src/`
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext","dom","dom.iterable","scripthost"]
   }
 }
